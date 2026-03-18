@@ -1,6 +1,6 @@
 window.SITE_CFG = {
-  name: "Chris Tortorella",
-  github: "https://github.com/YOUR_GITHUB",
-  linkedin: "https://www.linkedin.com/in/YOUR_LINKEDIN",
-  email: "you@email.com"
+  name: "Christopher Tortorella",
+  github: "https://github.com/tort1493",
+  linkedin: "www.linkedin.com/in/christopher-tortorella-0a24b991",
+  email: "christopher.tortorella@capitalone.com"
 };
