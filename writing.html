@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Writing — AI Lead Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body data-page="writing">
+  <script src="assets/config.js"></script>
+  
+<div class="nav">
+  <div class="container nav-inner">
+    <div class="brand">
+      <span id="siteName">YOUR NAME</span>
+      <span class="badge">AI Lead Portfolio</span>
+    </div>
+    <div class="links" id="navLinks">
+      <a href="index.html" data-page="index">Home</a>
+      <a href="projects.html" data-page="projects">Projects</a>
+      <a href="playbook.html" data-page="playbook">Playbook</a>
+      <a href="writing.html" data-page="writing">Writing</a>
+      <a href="resume.html" data-page="resume">Resume</a>
+      <a href="contact.html" data-page="contact">Contact</a>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    
+<section class="hero" style="padding-top:24px">
+  <h1>Writing</h1>
+  <p class="lead">Short memos and posts showing how I think about AI tradeoffs, safety, and operating models in production.</p>
+</section>
+
+<div class="grid cols-2">
+  <div class="card">
+    <h3>How to evaluate LLM features beyond “it looks good”</h3>
+    <p>Defining test sets, human rubrics, and regressions that prevent silent quality decay.</p>
+    <div class="project-links"><a href="#">Read</a></div>
+  </div>
+  <div class="card">
+    <h3>AI incident response: rollback criteria that actually work</h3>
+    <p>Practical triggers using latency/error rates, drift signals, and business KPI guardrails.</p>
+    <div class="project-links"><a href="#">Read</a></div>
+  </div>
+  <div class="card">
+    <h3>RAG guardrails: refusal is a feature</h3>
+    <p>Why abstaining beats hallucinating, and how to measure coverage.</p>
+    <div class="project-links"><a href="#">Read</a></div>
+  </div>
+  <div class="card">
+    <h3>Cost vs latency vs quality: choosing models like a lead</h3>
+    <p>Decision framework for model selection and rollout strategy.</p>
+    <div class="project-links"><a href="#">Read</a></div>
+  </div>
+</div>
+
+<div class="note" style="margin-top:14px">
+  Replace these placeholders with short markdown posts in a /posts folder or link out to Medium/LinkedIn.
+</div>
+
+  </div>
+  
+<div class="container footer">
+  <div>© <span id="year"></span> <span id="footerName">YOUR NAME</span>. Built for GitHub Pages.</div>
+  <div class="note">Tip: Keep every project page “AI Lead ready” with: KPI tree → architecture → eval → safety → monitoring → rollout.</div>
+</div>
+<script>
+  const y = new Date().getFullYear();
+  document.getElementById("year").textContent = y;
+</script>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

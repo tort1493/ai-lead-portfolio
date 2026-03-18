@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>AI Lead Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body data-page="index">
+  <script src="assets/config.js"></script>
+  
+<div class="nav">
+  <div class="container nav-inner">
+    <div class="brand">
+      <span id="siteName">YOUR NAME</span>
+      <span class="badge">AI Lead Portfolio</span>
+    </div>
+    <div class="links" id="navLinks">
+      <a href="index.html" data-page="index">Home</a>
+      <a href="projects.html" data-page="projects">Projects</a>
+      <a href="playbook.html" data-page="playbook">Playbook</a>
+      <a href="writing.html" data-page="writing">Writing</a>
+      <a href="resume.html" data-page="resume">Resume</a>
+      <a href="contact.html" data-page="contact">Contact</a>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    
+<section class="hero">
+  <h1>AI Lead — Production AI Systems</h1>
+  <p class="lead">
+    I design, ship, and operate AI systems (LLMs + ML) with strong evaluation, monitoring, and governance.
+    Domain depth in fintech; patterns transferable across industries.
+  </p>
+  <div class="cta-row">
+    <a class="btn primary" href="projects.html">View projects</a>
+    <a class="btn" href="playbook.html">AI governance playbook</a>
+    <a class="btn" data-fill="github" href="#">GitHub</a>
+    <a class="btn" data-fill="linkedin" href="#">LinkedIn</a>
+  </div>
+  <div class="kpi" style="margin-top:16px">
+    <span class="pill">LLM guardrails + RAG</span>
+    <span class="pill">Monitoring + drift</span>
+    <span class="pill">Decisioning + ranking</span>
+    <span class="pill">Document AI + HITL</span>
+    <span class="pill">MLOps-lite + APIs</span>
+  </div>
+</section>
+
+<hr class="sep"/>
+
+<section class="section">
+  <h2>What I build</h2>
+  <div class="grid cols-3">
+    <div class="card">
+      <h3>Language AI</h3>
+      <p>RAG assistants with citations, refusal behavior, prompt injection defenses, and evaluation suites.</p>
+    </div>
+    <div class="card">
+      <h3>Decision AI</h3>
+      <p>Ranking and prioritization engines built around cost/benefit, calibration, explainability, and fairness slices.</p>
+    </div>
+    <div class="card">
+      <h3>Production AI</h3>
+      <p>Standardized delivery: training pipelines, FastAPI services, Docker, CI, and monitoring + incident runbooks.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Featured projects</h2>
+  <div class="grid cols-2">
+    <a class="card" href="projects.html#rag-copilot">
+      <h3>RAG Knowledge Copilot with Guardrails</h3>
+      <p>Retrieval-first assistant with citations, injection resistance, and audit logs.</p>
+      <div class="project-meta">
+        <span class="pill">LLM</span><span class="pill">RAG</span><span class="pill">Safety</span>
+      </div>
+    </a>
+    <a class="card" href="projects.html#monitoring">
+      <h3>AI Monitoring & Drift Command Center</h3>
+      <p>Dashboards + alert rules + rollback criteria for operating AI systems.</p>
+      <div class="project-meta">
+        <span class="pill">Monitoring</span><span class="pill">Time series</span><span class="pill">Ops</span>
+      </div>
+    </a>
+    <a class="card" href="projects.html#decisioning">
+      <h3>Decisioning Prioritization Engine</h3>
+      <p>Cost-sensitive ranking engine (fintech) with calibration and explainability.</p>
+      <div class="project-meta">
+        <span class="pill">Ranking</span><span class="pill">Fintech</span><span class="pill">XAI</span>
+      </div>
+    </a>
+    <a class="card" href="projects.html#docai">
+      <h3>Document Intelligence Intake</h3>
+      <p>Field extraction + confidence + human correction workflow (HITL).</p>
+      <div class="project-meta">
+        <span class="pill">Doc AI</span><span class="pill">HITL</span><span class="pill">Ops</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Leadership artifacts</h2>
+  <div class="grid cols-2">
+    <div class="card">
+      <h3>AI Governance & Delivery Playbook</h3>
+      <p>Templates: model cards, risk register, LLM safety checklist, evaluation standard, incident runbook.</p>
+      <div class="project-links">
+        <a href="playbook.html">Open playbook</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>AI Platform Starter Kit</h3>
+      <p>Reusable project template: data validation, training/eval scripts, API, Docker, CI.</p>
+      <div class="project-links">
+        <a href="projects.html#platform">See details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>About</h2>
+  <div class="card">
+    <p>
+      I bring 10 years of experience building and improving digital collections and risk management processes at a major credit card company,
+      paired with a Computer Science degree focused on AI. I specialize in translating messy real-world workflows into reliable AI systems
+      with clear metrics, governance, and operational readiness.
+    </p>
+  </div>
+</section>
+
+  </div>
+  
+<div class="container footer">
+  <div>© <span id="year"></span> <span id="footerName">YOUR NAME</span>. Built for GitHub Pages.</div>
+  <div class="note">Tip: Keep every project page “AI Lead ready” with: KPI tree → architecture → eval → safety → monitoring → rollout.</div>
+</div>
+<script>
+  const y = new Date().getFullYear();
+  document.getElementById("year").textContent = y;
+</script>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

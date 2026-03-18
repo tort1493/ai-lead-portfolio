@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Projects — AI Lead Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body data-page="projects">
+  <script src="assets/config.js"></script>
+  
+<div class="nav">
+  <div class="container nav-inner">
+    <div class="brand">
+      <span id="siteName">YOUR NAME</span>
+      <span class="badge">AI Lead Portfolio</span>
+    </div>
+    <div class="links" id="navLinks">
+      <a href="index.html" data-page="index">Home</a>
+      <a href="projects.html" data-page="projects">Projects</a>
+      <a href="playbook.html" data-page="playbook">Playbook</a>
+      <a href="writing.html" data-page="writing">Writing</a>
+      <a href="resume.html" data-page="resume">Resume</a>
+      <a href="contact.html" data-page="contact">Contact</a>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    
+<section class="hero" style="padding-top:24px">
+  <h1>Projects</h1>
+  <p class="lead">Flagship AI systems with demos and leadership-grade artifacts (PRD, evaluation, safety, monitoring, rollout).</p>
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">all</button>
+    <button class="filter-btn" data-filter="llm">llm</button>
+    <button class="filter-btn" data-filter="monitoring">monitoring</button>
+    <button class="filter-btn" data-filter="ranking">ranking</button>
+    <button class="filter-btn" data-filter="docai">docai</button>
+    <button class="filter-btn" data-filter="mlops">mlops</button>
+    <button class="filter-btn" data-filter="fintech">fintech</button>
+  </div>
+</section>
+
+<div class="grid cols-2" id="projectGrid">
+
+  <div class="card project" id="platform" data-tags="mlops">
+    <h3>AI Platform Starter Kit</h3>
+    <p>Template repo for standardized delivery: training, evaluation, API, Docker, CI, and monitoring hooks.</p>
+    <div class="project-meta">
+      <span class="pill">mlops</span><span class="pill">fastapi</span><span class="pill">docker</span>
+    </div>
+    <div class="project-links">
+      <a href="#" target="_blank" rel="noopener">Repo</a>
+      <a href="#" target="_blank" rel="noopener">Docs</a>
+    </div>
+  </div>
+
+  <div class="card project" id="rag-copilot" data-tags="llm">
+    <h3>RAG Knowledge Copilot with Guardrails</h3>
+    <p>Retrieval-first assistant with citations, refusal behavior, injection defenses, and an eval suite.</p>
+    <div class="project-meta">
+      <span class="pill">llm</span><span class="pill">rag</span><span class="pill">safety</span>
+    </div>
+    <div class="project-links">
+      <a href="#" target="_blank" rel="noopener">Repo</a>
+      <a href="#" target="_blank" rel="noopener">Live demo</a>
+      <a href="#" target="_blank" rel="noopener">Eval report</a>
+    </div>
+  </div>
+
+  <div class="card project" id="monitoring" data-tags="monitoring mlops">
+    <h3>AI Monitoring & Drift Command Center</h3>
+    <p>Dashboards + alert rules + runbooks to operate AI systems (drift, latency, KPI guardrails).</p>
+    <div class="project-meta">
+      <span class="pill">monitoring</span><span class="pill">drift</span><span class="pill">ops</span>
+    </div>
+    <div class="project-links">
+      <a href="#" target="_blank" rel="noopener">Repo</a>
+      <a href="#" target="_blank" rel="noopener">Dashboard</a>
+      <a href="#" target="_blank" rel="noopener">Runbook</a>
+    </div>
+  </div>
+
+  <div class="card project" id="decisioning" data-tags="ranking fintech">
+    <h3>Decisioning Prioritization Engine</h3>
+    <p>Cost-sensitive ranking with calibration, slice analysis, explainability, and governance artifacts.</p>
+    <div class="project-meta">
+      <span class="pill">ranking</span><span class="pill">fintech</span><span class="pill">xai</span>
+    </div>
+    <div class="project-links">
+      <a href="#" target="_blank" rel="noopener">Repo</a>
+      <a href="#" target="_blank" rel="noopener">Demo</a>
+      <a href="#" target="_blank" rel="noopener">Model card</a>
+    </div>
+  </div>
+
+  <div class="card project" id="docai" data-tags="docai">
+    <h3>Document Intelligence Intake</h3>
+    <p>Field extraction with confidence + human correction (HITL), plus error taxonomy and privacy notes.</p>
+    <div class="project-meta">
+      <span class="pill">docai</span><span class="pill">hitl</span><span class="pill">privacy</span>
+    </div>
+    <div class="project-links">
+      <a href="#" target="_blank" rel="noopener">Repo</a>
+      <a href="#" target="_blank" rel="noopener">Demo</a>
+      <a href="#" target="_blank" rel="noopener">Error taxonomy</a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const btns = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".project");
+  btns.forEach(b => b.addEventListener("click", () => {
+    btns.forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    const f = b.dataset.filter;
+    cards.forEach(c => {
+      const tags = (c.dataset.tags || "").split(" ");
+      c.style.display = (f==="all" || tags.includes(f)) ? "" : "none";
+    });
+  }));
+</script>
+
+  </div>
+  
+<div class="container footer">
+  <div>© <span id="year"></span> <span id="footerName">YOUR NAME</span>. Built for GitHub Pages.</div>
+  <div class="note">Tip: Keep every project page “AI Lead ready” with: KPI tree → architecture → eval → safety → monitoring → rollout.</div>
+</div>
+<script>
+  const y = new Date().getFullYear();
+  document.getElementById("year").textContent = y;
+</script>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

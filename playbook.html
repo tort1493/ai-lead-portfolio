@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Playbook — AI Lead Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body data-page="playbook">
+  <script src="assets/config.js"></script>
+  
+<div class="nav">
+  <div class="container nav-inner">
+    <div class="brand">
+      <span id="siteName">YOUR NAME</span>
+      <span class="badge">AI Lead Portfolio</span>
+    </div>
+    <div class="links" id="navLinks">
+      <a href="index.html" data-page="index">Home</a>
+      <a href="projects.html" data-page="projects">Projects</a>
+      <a href="playbook.html" data-page="playbook">Playbook</a>
+      <a href="writing.html" data-page="writing">Writing</a>
+      <a href="resume.html" data-page="resume">Resume</a>
+      <a href="contact.html" data-page="contact">Contact</a>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    
+<section class="hero" style="padding-top:24px">
+  <h1>AI Governance & Delivery Playbook</h1>
+  <p class="lead">
+    Leadership artifacts I use to ship AI responsibly: evaluation standards, risk controls, and incident operations.
+    (This page links to the full repo once you publish it.)
+  </p>
+  <div class="cta-row">
+    <a class="btn primary" href="#" target="_blank" rel="noopener">Playbook repo</a>
+    <a class="btn" href="projects.html#platform">Platform starter kit</a>
+  </div>
+</section>
+
+<div class="grid cols-2">
+  <div class="card">
+    <h3>Evaluation Standard</h3>
+    <p>Offline → shadow → pilot → rollout. Includes slice analysis, calibration, and red-team tests for LLMs.</p>
+  </div>
+  <div class="card">
+    <h3>Model Card Template</h3>
+    <p>Intended use, data, metrics, limitations, fairness, monitoring, and change log.</p>
+  </div>
+  <div class="card">
+    <h3>Risk Register</h3>
+    <p>Risk, likelihood, impact, mitigations, owners, and monitoring signals.</p>
+  </div>
+  <div class="card">
+    <h3>LLM Safety Checklist</h3>
+    <p>Prompt injection, PII leakage, refusal criteria, citations, and audit logging.</p>
+  </div>
+  <div class="card">
+    <h3>AI Incident Runbook</h3>
+    <p>Severity levels, rollback triggers, comms plan, and postmortem template.</p>
+  </div>
+  <div class="card">
+    <h3>Data Contract</h3>
+    <p>Schema + validation + acceptable ranges + ownership + change management.</p>
+  </div>
+</div>
+
+<hr class="sep"/>
+
+<div class="card">
+  <h3>How to use this playbook</h3>
+  <p>
+    Every project in this portfolio links to a PRD-lite, an evaluation report, a model card, and an ops runbook.
+    The goal is to show hiring teams that I can lead AI delivery end-to-end: product, engineering, and operations.
+  </p>
+</div>
+
+  </div>
+  
+<div class="container footer">
+  <div>© <span id="year"></span> <span id="footerName">YOUR NAME</span>. Built for GitHub Pages.</div>
+  <div class="note">Tip: Keep every project page “AI Lead ready” with: KPI tree → architecture → eval → safety → monitoring → rollout.</div>
+</div>
+<script>
+  const y = new Date().getFullYear();
+  document.getElementById("year").textContent = y;
+</script>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
