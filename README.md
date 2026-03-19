@@ -20,3 +20,4 @@ Edit `assets/config.js` to set your name and links, then push to GitHub and enab
 - RAG Knowledge Copilot: `https://rag-knowledge-copilot-4kfqkwc8uzhjcfvtwj9ijj.streamlit.app/`
 - Decisioning Prioritization Engine: `https://decisioning-prioritization-engine-3gtdqy536k93znykdgurnd.streamlit.app/`
 - AI Monitoring Command Center: `https://ai-monitoring-command-center-6mo7benrwc4z4onpdzjhdx.streamlit.app/`
+- Document Intelligence Intake: `https://tort1493-document-intelligence-intake-appapp-lxzppr.streamlit.app/`
