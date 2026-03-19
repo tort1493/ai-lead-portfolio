@@ -30,7 +30,10 @@
     
 <section class="hero" style="padding-top:24px">
   <h1>Projects</h1>
-  <p class="lead">Flagship AI systems with demos and leadership-grade artifacts (PRD, evaluation, safety, monitoring, rollout).</p>
+  <p class="lead">
+  Flagship AI systems with demos and lead-level artifacts: product framing, architecture, evaluation,
+  safety controls, monitoring, and operational runbooks.
+</p>
   <div class="filters">
     <button class="filter-btn active" data-filter="all">all</button>
     <button class="filter-btn" data-filter="llm">llm</button>
@@ -44,69 +47,99 @@
 
 <div class="grid cols-2" id="projectGrid">
 
-  <div class="card project" id="platform" data-tags="mlops">
-    <h3>AI Platform Starter Kit</h3>
-    <p>Template repo for standardized delivery: training, evaluation, API, Docker, CI, and monitoring hooks.</p>
-    <div class="project-meta">
-      <span class="pill">mlops</span><span class="pill">fastapi</span><span class="pill">docker</span>
-    </div>
-    <div class="project-links">
-      <a href="https://github.com/tort1493/ai-platform-starter-kit" target="_blank" rel="noopener">Repo</a>
-      <a href="https://github.com/tort1493/ai-platform-starter-kit/tree/main/docs" target="_blank" rel="noopener">Docs</a>
-    </div>
+ <div class="card project" id="platform" data-tags="mlops">
+  <h3>AI Platform Starter Kit</h3>
+
+  <p>
+    Reusable starter foundation for shipping AI applications with standardized project structure,
+    evaluation flow, API delivery, containerization, and monitoring hooks.
+  </p>
+
+  <div class="project-meta">
+    <span class="pill">mlops</span><span class="pill">fastapi</span><span class="pill">docker</span>
   </div>
 
-  <div class="card project" id="rag-copilot" data-tags="llm">
-    <h3>RAG Knowledge Copilot with Guardrails</h3>
-    <p>Retrieval-first assistant with citations, refusal behavior, injection defenses, and an eval suite.</p>
-    <div class="project-meta">
-      <span class="pill">llm</span><span class="pill">rag</span><span class="pill">safety</span>
-    </div>
-    <div class="project-links">
-  <a href="https://github.com/tort1493/rag-knowledge-copilot" target="_blank" rel="noopener">Repo</a>
-  <a href="https://rag-knowledge-copilot-4kfqkwc8uzhjcfvtwj9ijj.streamlit.app/" target="_blank" rel="noopener">Live demo</a>
-  <a href="https://github.com/tort1493/rag-knowledge-copilot/blob/main/docs/03_evaluation_report.md" target="_blank" rel="noopener">Eval report</a>
-</div>
+  <div class="project-links">
+    <a href="https://github.com/tort1493/ai-platform-starter-kit" target="_blank" rel="noopener">Repo</a>
+    <a href="https://github.com/tort1493/ai-platform-starter-kit/tree/main/docs" target="_blank" rel="noopener">Docs</a>
   </div>
+</div>
+
+ <div class="card project" id="rag-copilot" data-tags="llm">
+  <h3>RAG Knowledge Copilot with Guardrails</h3>
+
+  <p>
+    Retrieval-based knowledge assistant that answers from approved sources, returns citations,
+    refuses when support is weak, and demonstrates evaluation, architecture, and runbook discipline.
+  </p>
+
+  <div class="project-meta">
+    <span class="pill">llm</span><span class="pill">rag</span><span class="pill">safety</span>
+  </div>
+
+  <div class="project-links">
+    <a href="https://github.com/tort1493/rag-knowledge-copilot" target="_blank" rel="noopener">Repo</a>
+    <a href="https://rag-knowledge-copilot-4kfqkwc8uzhjcfvtwj9ijj.streamlit.app/" target="_blank" rel="noopener">Live demo</a>
+    <a href="https://github.com/tort1493/rag-knowledge-copilot/blob/main/docs/03_evaluation_report.md" target="_blank" rel="noopener">Eval report</a>
+  </div>
+</div>
 
   <div class="card project" id="monitoring" data-tags="monitoring mlops">
-    <h3>AI Monitoring & Drift Command Center</h3>
-    <p>Dashboards + alert rules + runbooks to operate AI systems (drift, latency, KPI guardrails).</p>
-    <div class="project-meta">
-      <span class="pill">monitoring</span><span class="pill">drift</span><span class="pill">ops</span>
-    </div>
-    <div class="project-links">
-      <a href="https://github.com/tort1493/ai-monitoring-command-center" target="_blank" rel="noopener">Repo</a>
-      <a href="https://github.com/tort1493/ai-monitoring-command-center" target="_blank" rel="noopener">Dashboard</a>
-      <a href="https://github.com/tort1493/ai-monitoring-command-center/blob/main/docs/07_runbook.md" target="_blank" rel="noopener">Runbook</a>
-    </div>
+  <h3>AI Monitoring & Drift Command Center</h3>
+
+  <p>
+    Monitoring and observability concept for AI systems, focused on quality signals, drift detection,
+    alert thresholds, and runbook-based incident response.
+  </p>
+
+  <div class="project-meta">
+    <span class="pill">monitoring</span><span class="pill">drift</span><span class="pill">ops</span>
   </div>
+
+  <div class="project-links">
+    <a href="https://github.com/tort1493/ai-monitoring-command-center" target="_blank" rel="noopener">Repo</a>
+    <a href="https://github.com/tort1493/ai-monitoring-command-center" target="_blank" rel="noopener">Dashboard</a>
+    <a href="https://github.com/tort1493/ai-monitoring-command-center/blob/main/docs/07_runbook.md" target="_blank" rel="noopener">Runbook</a>
+  </div>
+</div>
 
   <div class="card project" id="decisioning" data-tags="ranking fintech">
-    <h3>Decisioning Prioritization Engine</h3>
-    <p>Cost-sensitive ranking with calibration, slice analysis, explainability, and governance artifacts.</p>
-    <div class="project-meta">
-      <span class="pill">ranking</span><span class="pill">fintech</span><span class="pill">xai</span>
-    </div>
-    <div class="project-links">
-      <a href="https://github.com/tort1493/decisioning-prioritization-engine" target="_blank" rel="noopener">Repo</a>
-      <a href="https://github.com/tort1493/decisioning-prioritization-engine" target="_blank" rel="noopener">Demo</a>
-      <a href="https://github.com/tort1493/decisioning-prioritization-engine/blob/main/docs/04_model_card.md" target="_blank" rel="noopener">Model card</a>
-    </div>
+  <h3>Decisioning Prioritization Engine</h3>
+
+  <p>
+    Explainable prioritization engine designed to rank work using business value, urgency, and risk,
+    with model transparency and governance-oriented documentation.
+  </p>
+
+  <div class="project-meta">
+    <span class="pill">ranking</span><span class="pill">fintech</span><span class="pill">xai</span>
   </div>
 
-  <div class="card project" id="docai" data-tags="docai">
-    <h3>Document Intelligence Intake</h3>
-    <p>Field extraction with confidence + human correction (HITL), plus error taxonomy and privacy notes.</p>
-    <div class="project-meta">
-      <span class="pill">docai</span><span class="pill">hitl</span><span class="pill">privacy</span>
-    </div>
-    <div class="project-links">
-      <a href="https://github.com/tort1493/document-intelligence-intake" target="_blank" rel="noopener">Repo</a>
-      <a href="https://github.com/tort1493/document-intelligence-intake" target="_blank" rel="noopener">Demo</a>
-      <a href="https://github.com/tort1493/document-intelligence-intake/blob/main/docs/03_evaluation_report.md" target="_blank" rel="noopener">Error taxonomy</a>
-    </div>
+  <div class="project-links">
+    <a href="https://github.com/tort1493/decisioning-prioritization-engine" target="_blank" rel="noopener">Repo</a>
+    <a href="https://github.com/tort1493/decisioning-prioritization-engine" target="_blank" rel="noopener">Demo</a>
+    <a href="https://github.com/tort1493/decisioning-prioritization-engine/blob/main/docs/04_model_card.md" target="_blank" rel="noopener">Model card</a>
   </div>
+</div>
+
+  <div class="card project" id="docai" data-tags="docai">
+  <h3>Document Intelligence Intake</h3>
+
+  <p>
+    Intake workflow for extracting structured data from documents, routing low-confidence results for
+    review, and supporting privacy-aware downstream operations.
+  </p>
+
+  <div class="project-meta">
+    <span class="pill">docai</span><span class="pill">hitl</span><span class="pill">privacy</span>
+  </div>
+
+  <div class="project-links">
+    <a href="https://github.com/tort1493/document-intelligence-intake" target="_blank" rel="noopener">Repo</a>
+    <a href="https://github.com/tort1493/document-intelligence-intake" target="_blank" rel="noopener">Demo</a>
+    <a href="https://github.com/tort1493/document-intelligence-intake/blob/main/docs/03_evaluation_report.md" target="_blank" rel="noopener">Error taxonomy</a>
+  </div>
+</div>
 
 </div>
 
@@ -128,7 +161,10 @@
   
 <div class="container footer">
   <div>© <span id="year"></span> <span id="footerName">YOUR NAME</span>. Built for GitHub Pages.</div>
-  <div class="note">Tip: Keep every project page “AI Lead ready” with: KPI tree → architecture → eval → safety → monitoring → rollout.</div>
+  <div class="note">
+  Every project is structured to show leadership-ready delivery: problem framing, architecture,
+  evaluation, safety, monitoring, and rollout readiness.
+</div>
 </div>
 <script>
   const y = new Date().getFullYear();
