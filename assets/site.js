@@ -1,10 +1,10 @@
 // Set active nav item + allow easy name/config editing
 (function(){
   const cfg = window.SITE_CFG || {
-    name: "YOUR NAME",
-    github: "https://github.com/YOUR_GITHUB",
-    linkedin: "https://www.linkedin.com/in/YOUR_LINKEDIN",
-    email: "you@email.com"
+    name: "Christopher Tortorella",
+    github: "https://github.com/tort1493",
+    linkedin: "https://www.linkedin.com/in/christopher-tortorella-0a24b991",
+    email: "christopher.tortorella@capitalone.com"
   };
   document.getElementById("siteName") && (document.getElementById("siteName").textContent = cfg.name);
   document.getElementById("footerName") && (document.getElementById("footerName").textContent = cfg.name);
