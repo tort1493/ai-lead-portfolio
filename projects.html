@@ -35,14 +35,15 @@
   safety controls, monitoring, and operational runbooks.
 </p>
   <div class="filters">
-    <button class="filter-btn active" data-filter="all">all</button>
-    <button class="filter-btn" data-filter="llm">llm</button>
-    <button class="filter-btn" data-filter="monitoring">monitoring</button>
-    <button class="filter-btn" data-filter="ranking">ranking</button>
-    <button class="filter-btn" data-filter="docai">docai</button>
-    <button class="filter-btn" data-filter="mlops">mlops</button>
-    <button class="filter-btn" data-filter="fintech">fintech</button>
-  </div>
+  <span>all</span>
+  <span>llm</span>
+  <span>monitoring</span>
+  <span>ranking</span>
+  <span>docai</span>
+  <span>mlops</span>
+  <span>governance</span>
+  <span>fintech</span>
+</div>
 </section>
 
 <div class="grid cols-2" id="projectGrid">
@@ -52,7 +53,7 @@
 
   <p>
     Reusable starter foundation for shipping AI applications with standardized project structure,
-    evaluation flow, API delivery, containerization, and monitoring hooks.
+    evaluation flow, API delivery, containerization, and operational hooks.
   </p>
 
   <div class="project-meta">
@@ -85,40 +86,38 @@
 </div>
 
   <div class="card project" id="monitoring" data-tags="monitoring mlops">
-  <h3>AI Monitoring & Drift Command Center</h3>
+  <h3>AI Monitoring Command Center</h3>
 
   <p>
-    Monitoring and observability concept for AI systems, focused on quality signals, drift detection,
-    alert thresholds, and runbook-based incident response.
+    Completed local-first Streamlit dashboard that simulates how an operations team monitors AI systems in production.
+    It brings model health, latency, cost, moderation drift, alerts, and active incidents into a single command-center view.
   </p>
 
   <div class="project-meta">
-    <span class="pill">monitoring</span><span class="pill">drift</span><span class="pill">ops</span>
+    <span class="pill">monitoring</span><span class="pill">ops</span><span class="pill">streamlit</span>
   </div>
 
   <div class="project-links">
     <a href="https://github.com/tort1493/ai-monitoring-command-center" target="_blank" rel="noopener">Repo</a>
-    <a href="https://github.com/tort1493/ai-monitoring-command-center" target="_blank" rel="noopener">Dashboard</a>
-    <a href="https://github.com/tort1493/ai-monitoring-command-center/blob/main/docs/07_runbook.md" target="_blank" rel="noopener">Runbook</a>
+    <a href="https://github.com/tort1493/ai-monitoring-command-center/tree/main/docs" target="_blank" rel="noopener">Docs</a>
   </div>
 </div>
 
-  <div class="card project" id="decisioning" data-tags="ranking fintech">
-  <h3>Decisioning Prioritization Engine</h3>
+  <div class="card project" id="governance" data-tags="governance fintech">
+  <h3>AI Governance Playbook</h3>
 
   <p>
-    Explainable prioritization engine designed to rank work using business value, urgency, and risk,
-    with model transparency and governance-oriented documentation.
+    Governance toolkit with reusable templates for evaluation standards, model cards, risk registers,
+    safety checklists, incident response, and data contracts.
   </p>
 
   <div class="project-meta">
-    <span class="pill">ranking</span><span class="pill">fintech</span><span class="pill">xai</span>
+    <span class="pill">governance</span><span class="pill">risk</span><span class="pill">playbook</span>
   </div>
 
   <div class="project-links">
-    <a href="https://github.com/tort1493/decisioning-prioritization-engine" target="_blank" rel="noopener">Repo</a>
-    <a href="https://github.com/tort1493/decisioning-prioritization-engine" target="_blank" rel="noopener">Demo</a>
-    <a href="https://github.com/tort1493/decisioning-prioritization-engine/blob/main/docs/04_model_card.md" target="_blank" rel="noopener">Model card</a>
+    <a href="https://github.com/tort1493/ai-governance-playbook" target="_blank" rel="noopener">Repo</a>
+    <a href="playbook.html">Portfolio page</a>
   </div>
 </div>
 
@@ -136,7 +135,6 @@
 
   <div class="project-links">
     <a href="https://github.com/tort1493/document-intelligence-intake" target="_blank" rel="noopener">Repo</a>
-    <a href="https://github.com/tort1493/document-intelligence-intake" target="_blank" rel="noopener">Demo</a>
     <a href="https://github.com/tort1493/document-intelligence-intake/blob/main/docs/03_evaluation_report.md" target="_blank" rel="noopener">Error taxonomy</a>
   </div>
 </div>
